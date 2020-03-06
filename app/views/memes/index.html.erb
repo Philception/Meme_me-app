@@ -1,9 +1,9 @@
  <h1> Meme-me's </h1> <br> <h3> <%= link_to 'Make a Meme-me', new_meme_path %> </h3>
-
+   <center>
    <ul>
     <% @memes.each do |meme| %>
     <%= link_to image_tag(meme.image), meme_path(meme) %>
     <br>
     <% end %>
    </ul>
-  
+   </center>
