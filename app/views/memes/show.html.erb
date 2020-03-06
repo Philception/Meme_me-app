@@ -1,0 +1,13 @@
+<h2> <%= @meme.caption %> </h2>
+    <%= link_to 'New User ?', new_user_path %> <br> <%= link_to 'logout', logout_path %>
+    <br>
+    <br>
+    <%= button_to 'lyke diss', create_like_path(@meme) %>
+    <%=  @meme.likes.count  %> Lykes <3
+    <ul> 
+        <h4>
+            <%= image_tag @meme.image %>
+        </h4>
+        <br>
+            <%= @meme.caption %>
+    </ul>

@@ -1,0 +1,9 @@
+<h1> Meme-me! </h1>
+
+<%= form_for @meme do |f| %>
+     
+  <p> <%= f.text_field :image, placeholder: "url here" %>
+  <p> <%= f.text_area :caption, placeholder: "words" %>
+    <%= f.submit %> 
+
+<% end %>
